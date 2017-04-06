@@ -1,6 +1,6 @@
 # encoding: utf-8
 
-module Assertion
+class Assertion::Guard
 
   # The base class for object guards
   #
@@ -30,7 +30,7 @@ module Assertion
   #   AdultOnly[john]
   #   # => #<User @name="John", @age=59>
   #
-  class Guard
+
 
     extend DSL::Attribute
     extend DSL::Caller
@@ -68,4 +68,3 @@ module Assertion
 
   end # class Guard
 
-end # module Assertion

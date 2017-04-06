@@ -1,12 +1,6 @@
 # encoding: utf-8
 
-module Assertion
-
-  # The exception to be raised by invalid assertions' `validate!` method call
-  #
-  # @api public
-  #
-  class InvalidError < RuntimeError
+class Assertion::InvalidError < RuntimeError
 
     # @!scope class
     # @!method new(*names)
@@ -37,4 +31,3 @@ module Assertion
 
   end # class InvalidError
 
-end # module Assertion

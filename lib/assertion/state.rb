@@ -1,12 +1,12 @@
 # encoding: utf-8
 
-module Assertion
+class Assertion::State
 
   # Describes the composable state of the assertion
   #
   # @api public
   #
-  class State
+
 
     # @!scope class
     # @!method new(state, *messages)
@@ -74,5 +74,3 @@ module Assertion
     alias_method :+, :&
 
   end # class State
-
-end # module Assertion

@@ -1,6 +1,6 @@
 # encoding: utf-8
 
-module Assertion
+class Assertion::Inversion < Base
 
   # Describes the inversion of the assertion object
   #
@@ -19,7 +19,7 @@ module Assertion
   #
   # @api private
   #
-  class Inversion < Base
+
 
     # @!scope class
     # @!method new(assertion)
@@ -61,4 +61,3 @@ module Assertion
 
   end # class Inversion
 
-end # module Assertion

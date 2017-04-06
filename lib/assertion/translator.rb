@@ -2,7 +2,7 @@
 
 require "i18n"
 
-module Assertion
+class Assertion::Translator
 
   # Module defines how to translate messages describing the desired state
   # of the current assertion
@@ -25,7 +25,6 @@ module Assertion
   #
   # @author Andrew Kozin <Andrew.Kozin@gmail.com>
   #
-  class Translator
 
     # The gem-specific root scope for translations
     #
@@ -74,5 +73,3 @@ module Assertion
     end
 
   end # class Translator
-
-end # module Assertion

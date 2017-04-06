@@ -1,6 +1,6 @@
 # encoding: utf-8
 
-module Assertion
+class Assertion::Base
 
   # The base class for assertions about some attributes
   #
@@ -33,7 +33,7 @@ module Assertion
   #   IsAdult[jane].valid? # => false
   #   child[jane].valid? # => true
   #
-  class Base
+
 
     extend DSL::Attributes
     extend DSL::Inversion
@@ -108,4 +108,3 @@ module Assertion
 
   end # class Base
 
-end # module Assertion
